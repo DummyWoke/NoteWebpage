@@ -6,7 +6,7 @@ User.hasMany(Note, {
   onDelete: 'CASCADE'
 });
 
-Notes.belongsTo(User, {
+Note.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
