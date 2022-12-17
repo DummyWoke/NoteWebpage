@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS notepage_db;
+CREATE DATABASE notepage_db;

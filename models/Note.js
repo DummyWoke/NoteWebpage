@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// create our User model
-class User extends Model {}
+// create our Notes model
+class Note extends Model {}
 
-// create fields/columns for User model
-User.init(
+// create fields/columns for Notes model
+Note.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,15 +13,13 @@ User.init(
       primaryKey: true,
       autoIncrement: true
     },
-    username: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    password: {
+    content: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
-
     }
   },
   {
@@ -29,8 +27,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user'
+    modelName: 'note'
   }
 );
 
-module.exports = User;
+module.exports = Note;
