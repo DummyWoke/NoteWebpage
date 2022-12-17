@@ -5,17 +5,19 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
     // Get all notes and JOIN with user data
-    const noteData = await note.findAll({
+    const noteData = await Note.findAll({
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         },
       ],
     });
 
     // Serialize data so the template can read it
-    const notes = noteData.map((project) => note.get({ plain: true }));
+    const notes = noteData.map((note) => note.get({ plain: true }));
+
+    console.log (notes)
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
@@ -24,6 +26,8 @@ router.get('/', async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
+
+    console.error (err)
   }
 });
 
