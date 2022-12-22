@@ -9,7 +9,13 @@
 
               {{#if logged_in}}
               <ul class="nav nav-pills">
+                <button class="btn btn-hidden">
+                  Logout
+                </button>
 
+                <span class="fs-3" id="DisplayUser" >
+                  User
+                </span>
               </ul>
         
               {{else}}
@@ -120,7 +126,7 @@
         <form id="NoteForm">
                 <div class="mb-3 ">
                 <label for="exampleFormControlInput1" class="form-label">Note Title</label>
-                <input type="input" class="form-control" id="NoteTitle" placeholder="insert title">
+                <input type="input" class="form-control" id="NoteTitle" placeholder="">
                 </div>
           
                 <div class="mb-3">
