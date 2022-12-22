@@ -1,0 +1,87 @@
+ <div class="modal fade" id="Login-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal-title">Login</h5>
+                    </div>
+                    
+                    <form id="UserLoginForm">
+                    <div class="modal-body">
+                      <label for="Login-modal-user" class="form-label">Your user:</label>
+                      <input type="input" class="form-control" id="Login-modal-user" placeholder="JohnDoe">
+
+                      <label for="modal-password" class="form-label">Your Password:</label>
+                      <input type="password" class="form-control" id="Login-modal-password">
+                    </div>
+
+                    <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                    </form>
+
+                    <div class="container">
+                      <div class="alert alert-danger d-flex align-items-center d-none" role="alert" id="failedlogin">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"></use></svg>
+                      <div>
+                      Login Failed.
+                      </div>
+                      </div>
+
+                      <div class="alert alert-success d-flex align-items-center d-none" role="alert" id="successfulllogin">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                      <div>
+                      login Successfull.
+                      </div>
+                      </div>
+                    </div>
+
+                </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="Signup-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modal-title">SignUp</h5>
+                    </div>
+                    
+                    <form id="UserSignUpForm">
+                    <div class="modal-body">
+                      <label for="Signup-modal-user" class="form-label">Your user:</label>
+                      <input type="input" class="form-control" id="Signup-modal-user" placeholder="JohnDoe">
+
+                      <label for="modal-password" class="form-label">Your Password:</label>
+                      <input type="password" class="form-control" id="Signup-modal-password">
+                    </div>
+
+                    <div class="modal-footer">
+                      <button class="btn btn-primary">Create User</button>
+                    </div>
+
+                    </form id="SignupForm">
+
+                    <div class="container">
+                      <div class="alert alert-danger d-flex align-items-center d-none" role="alert" id="failedusercreation">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"></use></svg>
+                      <div>
+                      User creation failed.
+                      </div>
+                      </div>
+
+                      <div class="alert alert-success d-flex align-items-center d-none" role="alert" id="successfullusercreation">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                      <div>
+                      User has been succesfully created.
+                      </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+                  
+                </div>
+              </div>
+            </header>
+          
+</header>
