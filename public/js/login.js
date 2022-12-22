@@ -30,6 +30,7 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         document.location.replace('/profile');
+        document.querySelector('#successfulllogin').classList.remove("d-none")
       } else {
         alert(response.statusText);
       }
