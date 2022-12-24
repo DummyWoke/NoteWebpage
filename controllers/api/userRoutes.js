@@ -47,23 +47,7 @@ router.post('/login', async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
-      req.session.logged_in = true;
-      
-      // res.json({ user: userData, message: 'You are now logged in!' });
-
-      res.render({"profile",{layout:}})
-    });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-
-
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
+      req.session.logged_in = true;;
 
 router.post('/logout', (req, res) => {
 
